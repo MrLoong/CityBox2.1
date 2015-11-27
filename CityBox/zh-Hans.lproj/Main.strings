@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Forget Password"; ObjectID = "4eY-qP-dmU"; */
+"4eY-qP-dmU.normalTitle" = "Forget Password";
+
+/* Class = "UIButton"; normalTitle = "Sign up"; ObjectID = "Heg-v0-dAM"; */
+"Heg-v0-dAM.normalTitle" = "Sign up";
+
+/* Class = "UIButton"; normalTitle = "Sign in"; ObjectID = "PCD-wW-hxv"; */
+"PCD-wW-hxv.normalTitle" = "Sign in";
+
+/* Class = "UIBarButtonItem"; title = "设置"; ObjectID = "QOI-sp-79M"; */
+"QOI-sp-79M.title" = "设置";
+
+/* Class = "UIButton"; normalTitle = "周数选择"; ObjectID = "ga1-E3-VsU"; */
+"ga1-E3-VsU.normalTitle" = "周数选择";
