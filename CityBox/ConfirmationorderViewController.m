@@ -34,6 +34,7 @@
     if([message[@"status"] isEqual:@"ok"]){
         [self allertinitTitle:@"提示" meeeage:@"提交订单成功"];
         [[ViewController getOrder] clearMessage];
+        
         [WSProgressHUD dismiss];
     }
     
@@ -72,9 +73,7 @@
         
         NSDictionary *so = [NSDictionary dictionaryWithObjectsAndKeys:obj.Canteen,@"st",obj.Stalls,@"dk",obj.number,@"sl",obj.unitPrice,@"dj",obj.dishesName,@"cm", nil];
         [mutableArry addObject:so];
-        
     }
-    
     NSDictionary *song = [NSDictionary dictionaryWithObjectsAndKeys:mutableArry,@"ordermeal",[ViewController getOrder].address,@"where",[ViewController getOrder].totalPrice,@"price",[ViewController getOrder].phoneNum,@"phone",[ViewController getOrder].remarks,@"remark",[ViewController getOrder].commission,@"reward",[ViewController getOrder].orderNum,@"ordernum",nil];
     
     if ([NSJSONSerialization isValidJSONObject:song])
@@ -109,10 +108,6 @@
     [WSProgressHUD dismiss];
     [alert show];
 }
-
-
-
-
 
 /*
 #pragma mark - Navigation

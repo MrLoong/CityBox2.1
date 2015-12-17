@@ -21,6 +21,7 @@
 @property UINavigationController *courselistViewController;
 @property UINavigationController *libraryViewController;
 @property UINavigationController *aboutViewController;
+@property UINavigationController *selectFoodView;
 
 @end
 
@@ -55,7 +56,7 @@
             
         case 2:
             [self removeFramView];
-            [self.view addSubview:_courselistViewController.view];
+            [self.view addSubview:_selectFoodView.view];
             [self.view addSubview:self.tabBar];
             break;
         case 3:
@@ -72,11 +73,11 @@
     _classViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"classNavigation"];
     _aboutViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AboutNavigation"];
     _libraryViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"BookNavigation"];
-    _courselistViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Food"];
+    _selectFoodView = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SelectFoodView"];
 }
 -(void)removeFramView{
     [_classViewController.view removeFromSuperview];
-    [_courselistViewController.view removeFromSuperview];
+    [_selectFoodView.view removeFromSuperview];
     [_aboutViewController.view removeFromSuperview];
     [_libraryViewController.view removeFromSuperview];
 }

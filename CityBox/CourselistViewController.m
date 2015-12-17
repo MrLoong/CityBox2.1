@@ -183,10 +183,8 @@ typedef void(^ISLimitWidth)(BOOL yesORNo,id data);
     self.rowsCountBydefaultSwitch.on = YES;
     [self rowsCountBydefaultSwitchClicked:self.rowsCountBydefaultSwitch];
     
-  //    self.collectionView.backgroundColor = [UIColor clearColor];
-  //  self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"classBack"]];
-
     
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
 }
 

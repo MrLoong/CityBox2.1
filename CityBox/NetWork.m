@@ -25,12 +25,14 @@
         responseType:(id)responseType
              httpNum:(NSString *)httpRequesNum{
     AFHTTPRequestOperationManager *manager            = [AFHTTPRequestOperationManager manager];
+    
     // 设置回复内容信息
     manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
     [manager POST:URLString
        parameters:parmenters
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
               _dictonary = responseObject;
+            //  NSLog(@"%@",responseObject);
               HttpRequesCenter <HttpProtocol> *object = [[HttpRequesCenter alloc]init];;
               [object httpMessage:_dictonary httpNumber:httpRequesNum];
           }

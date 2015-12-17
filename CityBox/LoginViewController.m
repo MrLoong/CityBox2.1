@@ -62,8 +62,6 @@
 
 -(void)subscriptionMessage:(id)message httpNumber:(NSString *)httpNumber{
     
-    
-    
     if ([httpNumber isEqual:@"login"]&&[message[@"status"] isEqual:@"ok"]) {
         [self getClass];
         [self getStalls];
@@ -81,6 +79,9 @@
                 [_dbHeper addData:message type:httpNumber];
                 
                 if([[_dbHeper searchCheck:@"ClassData"]  isEqual: @"yes"]&&[[_dbHeper searchCheck:@"Stalls"]  isEqual: @"yes"]){
+                    
+                    NSLog(@"进入");
+                    
                     [WSProgressHUD dismiss];
                     [self.view addSubview:_mainTabBarController.view];
                 }
@@ -112,7 +113,10 @@
 -(void)getStalls{
     
     NSString *POST = @"http://csxyxzs.sinaapp.com/stall_ios.php";
+    
+
     [HttpRequesCenter createHttpReques:@"Stalls"];
+
     [HttpRequesCenter addRequesClass:self withCreateHttpReques:@"Stalls" POST:POST parmenters:nil];
 }
 
@@ -126,7 +130,6 @@
     [HttpRequesCenter createHttpReques:@"login"];
     [HttpRequesCenter addRequesClass:self withCreateHttpReques:@"login" POST:POST parmenters:parmenters];
     [WSProgressHUD showWithStatus:@"登录中..." maskType:WSProgressHUDMaskTypeBlack];
-
 }
 
 -(void)allertinitTitle:(NSString *)title meeeage:(NSString *)message{

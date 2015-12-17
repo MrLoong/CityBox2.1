@@ -168,7 +168,6 @@
         total+= [obj.unitPrice intValue];
     }
     
-    
     return  [NSString stringWithFormat: @"%d元", total];
 }
 

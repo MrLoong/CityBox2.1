@@ -36,6 +36,7 @@
     [_dbHelper LoadData];
     [GetManage setDbHerlper:_dbHelper];
     
+    
     if([[_dbHelper searchCheck:@"ClassData"]  isEqual: @"yes"]&&[[_dbHelper searchCheck:@"Stalls"]  isEqual: @"yes"]){
         
         [self.view addSubview:_mainTabBarController.view];

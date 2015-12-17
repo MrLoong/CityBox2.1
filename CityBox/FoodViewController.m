@@ -68,7 +68,6 @@
     cell.Canteen = _Canteen;
     cell.Stalls = _Stalls;
     
-    
 
     return cell;
 }

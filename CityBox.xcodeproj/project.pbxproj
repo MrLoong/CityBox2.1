@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E2590B753E27E4FBEACEF1BB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C531455320F6DA891FE9C2FF /* libPods.a */; };
+		FC063F551C225F4B00ABD72F /* SelectViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC063F541C225F4B00ABD72F /* SelectViewViewController.m */; };
 		FC0A34421C0199A000AF820B /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0A34411C0199A000AF820B /* Order.m */; };
 		FC0A34451C0199BB00AF820B /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0A34441C0199BB00AF820B /* Menu.m */; };
 		FC42B2621BFB7F7400096262 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FC42B2611BFB7F7400096262 /* UICollectionViewLeftAlignedLayout.m */; };
@@ -74,6 +75,8 @@
 		41F419E6AD6CE44100A879DF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B06A61D1435CEA929640A65D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C531455320F6DA891FE9C2FF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC063F531C225F4B00ABD72F /* SelectViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectViewViewController.h; sourceTree = "<group>"; };
+		FC063F541C225F4B00ABD72F /* SelectViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectViewViewController.m; sourceTree = "<group>"; };
 		FC0A34401C0199A000AF820B /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
 		FC0A34411C0199A000AF820B /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
 		FC0A34431C0199BB00AF820B /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
@@ -361,6 +364,8 @@
 				FC73778B1C016DFE0082ED87 /* SubmitOrders.m */,
 				FC79A9B61C042A46000651F6 /* ConfirmationorderViewController.h */,
 				FC79A9B71C042A46000651F6 /* ConfirmationorderViewController.m */,
+				FC063F531C225F4B00ABD72F /* SelectViewViewController.h */,
+				FC063F541C225F4B00ABD72F /* SelectViewViewController.m */,
 			);
 			name = FoodController;
 			sourceTree = "<group>";
@@ -699,6 +704,7 @@
 				FC7377901C017B730082ED87 /* FoodviewCell.m in Sources */,
 				FC85C4281BFB766D00D204A9 /* AboutViewController.m in Sources */,
 				FC85C3EE1BFB750400D204A9 /* AppDelegate.m in Sources */,
+				FC063F551C225F4B00ABD72F /* SelectViewViewController.m in Sources */,
 				FC85C3F71BFB750400D204A9 /* CityBox.xcdatamodeld in Sources */,
 				FC85C4551BFB79E200D204A9 /* FBShimmeringLayer.m in Sources */,
 				FC0A34421C0199A000AF820B /* Order.m in Sources */,

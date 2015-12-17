@@ -67,7 +67,6 @@ static NSMutableDictionary *_httpRequesDictionary = nil;
 }
 
 
-
 #pragma mark - 私有方法
 + (NSHashTable *)existhttpRequesNumber:(NSString *)subscriptionNumber {
     
